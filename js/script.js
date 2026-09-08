@@ -1,6 +1,8 @@
 (function(){
+  // respeita a preferência de sistema por menos animação
   var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // ---- cursor customizado (só em dispositivos com mouse/hover) ----
   var cursor = document.getElementById('cursor');
   var temHover = window.matchMedia('(hover:hover)').matches;
   if (temHover) {
@@ -9,12 +11,14 @@
       cursor.style.left = e.clientX + 'px';
       cursor.style.top = e.clientY + 'px';
     }, { passive:true });
+    // aumenta o cursor ao passar sobre links, botões e cards de projeto
     document.querySelectorAll('a, button, .bloco-visual').forEach(function(el){
       el.addEventListener('mouseenter', function(){ cursor.classList.add('grow'); });
       el.addEventListener('mouseleave', function(){ cursor.classList.remove('grow'); });
     });
   }
 
+  // ---- barra de progresso de leitura no topo da página ----
   var barra = document.getElementById('progresso');
   window.addEventListener('scroll', function(){
     var altura = document.documentElement.scrollHeight - window.innerHeight;
@@ -22,6 +26,7 @@
     barra.style.width = pct + '%';
   });
 
+  // ---- animação de entrada do título (linha por linha) ----
   if (!reduz) {
     var linhas = document.querySelectorAll('#tituloAnimado .linha span');
     linhas.forEach(function(span, i){
@@ -45,6 +50,7 @@
   }
   track.innerHTML = html;
 
+  // ---- efeito de inclinação 3D nos cards de projeto ao mover o mouse ----
   if (temHover && !reduz) {
     document.querySelectorAll('.bloco-visual').forEach(function(bloco){
       bloco.addEventListener('mousemove', function(e){
@@ -59,6 +65,8 @@
     });
   }
 
+  // ---- contador animado dos números da seção "Como eu trabalho" ----
+  // usa IntersectionObserver pra só rodar a animação quando o elemento entra na tela
   var contadores = document.querySelectorAll('.numero-item .valor');
   var obs = new IntersectionObserver(function(entradas){
     entradas.forEach(function(entrada){

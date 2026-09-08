@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arthur Sousa da Costa — Desenvolvedor Back-End</title>
+<meta name="description" content="Arthur Sousa da Costa constrói sistemas back-end em PHP e Python. Portfólio, projetos e contato.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="progresso"></div>
+
+<header class="topo">
+  <div class="marca">Arthur Sousa</div>
+  <nav class="nav-links">
+    <a href="#projetos" class="sweep">Projetos</a>
+    <a href="#sobre" class="sweep">Sobre</a>
+    <a href="#contato" class="sweep">Contato</a>
+  </nav>
+</header>
+
+<section class="masthead">
+  <div class="linha-subtitulo">// desenvolvedor back-end em formação</div>
+
+  <h1 class="titulo" id="tituloAnimado">
+    <span class="linha"><span>Escrevo PHP e</span></span>
+    <span class="linha"><span>Python até o</span></span>
+    <span class="linha"><span>sistema rodar.</span></span>
+  </h1>
+
+  <div class="masthead-grid">
+    <p class="intro-editorial">
+      Sou estudante de Análise e Desenvolvimento de Sistemas em Campo Grande (MS).
+      Não fico só na teoria: cada tecnologia que aprendo vira um sistema de verdade —
+      <strong>gestão de clínica, de pet shop, de estoque</strong> — antes de eu considerar que aprendi.
+      Hoje procuro minha primeira vaga como dev back-end.
+    </p>
+
+    <div class="snippet-box">
+<span class="kw">class</span> Arthur <span class="kw">extends</span> Estudante {<br>
+&nbsp;&nbsp;<span class="kw">public</span> $stack = [<span class="str">'PHP'</span>, <span class="str">'Python'</span>, <span class="str">'SQL'</span>];<br>
+&nbsp;&nbsp;<span class="cm">// aprende fazendo, não só lendo</span><br>
+&nbsp;&nbsp;<span class="kw">public function</span> <span class="fn">disponibilidade</span>() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="str">'imediata'</span>;<br>
+&nbsp;&nbsp;}<br>
+}
+    </div>
+  </div>
+</section>
+
+<div class="faixa">
+  <div class="faixa-track" id="faixaTrack"></div>
+</div>
+
+<section id="projetos">
+  <div class="cabecalho-editorial">
+    <h2>O que eu já construí</h2>
+    <p>Cinco sistemas, do banco de dados até a tela. Nenhum deles é exercício de curso largado pela metade.</p>
+  </div>
+
+  <div class="projeto">
+    <div class="bloco-visual"><span class="numero">01</span>DENT IA</div>
+    <div class="projeto-corpo">
+      <div class="num-linha">01 / gestão de clínica</div>
+      <h3>DENT IA</h3>
+      <p>Sistema de gestão para clínicas odontológicas: prontuário eletrônico, odontograma interativo e login por perfil de usuário. É o projeto que uso pra estudar como precificar um SaaS de verdade.</p>
+      <div class="tags"><span>PHP</span><span>JSON</span><span>SVG</span></div>
+      <a href="https://github.com/arthursousa-dev/projeto-dent-ia/tree/master" class="sweep" target="_blank" rel="noopener">ver código</a>
+    </div>
+  </div>
+
+  <div class="projeto inverso">
+    <div class="bloco-visual"><span class="numero">02</span>GRAND STAYS</div>
+    <div class="projeto-corpo">
+      <div class="num-linha">02 / reservas de hotel</div>
+      <h3>Grand Stays</h3>
+      <p>Plataforma de reservas para hotel: consulta de quartos, disponibilidade e fluxo de reserva pensado pra hóspede e pra administração.</p>
+      <div class="tags"><span>PHP</span><span>MySQL</span><span>Reservas</span></div>
+      <a href="https://github.com/arthursousa-dev/hotel-grandstays/tree/master" class="sweep" target="_blank" rel="noopener">ver código</a>
+    </div>
+  </div>
+
+  <div class="projeto">
+    <div class="bloco-visual"><span class="numero">03</span>STOCKPRO</div>
+    <div class="projeto-corpo">
+      <div class="num-linha">03 / controle de estoque</div>
+      <h3>StockPro</h3>
+      <p>Entradas, saídas, fornecedores e um dashboard que mostra o que está acontecendo no estoque sem precisar abrir planilha nenhuma.</p>
+      <div class="tags"><span>PHP</span><span>JSON</span><span>Dashboard</span></div>
+      <a href="https://github.com/arthursousa-dev/stock-pro" class="sweep" target="_blank" rel="noopener">ver código</a>
+    </div>
+  </div>
+
+  <div class="projeto inverso">
+    <div class="bloco-visual"><span class="numero">04</span>PETSHOP MANAGER</div>
+    <div class="projeto-corpo">
+      <div class="num-linha">04 / gestão de pet shop</div>
+      <h3>PetShop Manager</h3>
+      <p>Clientes, pets, agenda de atendimento e um módulo financeiro que calcula receita e lucro do mês sozinho. Três perfis de acesso, cada um vendo só o que precisa ver.</p>
+      <div class="tags"><span>PHP</span><span>Chart.js</span><span>Financeiro</span></div>
+      <a href="https://github.com/arthursousa-dev/petshop-manager" class="sweep" target="_blank" rel="noopener">ver código</a>
+    </div>
+  </div>
+
+  <div class="projeto">
+    <div class="bloco-visual"><span class="numero">05</span>IMOBILIÁRIA</div>
+    <div class="projeto-corpo">
+      <div class="num-linha">05 / site imobiliário</div>
+      <h3>Imobiliária</h3>
+      <p>Site institucional para imobiliária com catálogo de imóveis, filtros de busca e páginas de detalhe pensadas pra conversão de leads.</p>
+      <div class="tags"><span>PHP</span><span>MySQL</span><span>Imóveis</span></div>
+      <a href="https://github.com/arthursousa-dev/site-imobiliaria" class="sweep" target="_blank" rel="noopener">ver código</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="cabecalho-editorial">
+    <h2>Como eu trabalho</h2>
+  </div>
+
+  <p class="skills-texto">
+    Escrevo a maior parte do meu código em <b>PHP</b> e <b>Python</b>.
+    Gosto de modelar bem um <b>banco de dados</b> antes de sair codando,
+    e uso <b>Git</b> desde o primeiro commit — não só quando algo já deu errado.
+  </p>
+
+  <div class="numeros">
+    <div class="numero-item"><div class="valor" data-alvo="5">0</div><div class="rotulo">sistemas completos construídos</div></div>
+    <div class="numero-item"><div class="valor" data-alvo="6">0</div><div class="rotulo">certificações concluídas</div></div>
+    <div class="numero-item"><div class="valor" data-alvo="2027">0</div><div class="rotulo">previsão de formatura em ADS</div></div>
+  </div>
+</section>
+
+<section id="certificacoes">
+  <div class="cabecalho-editorial">
+    <h2>Formação complementar</h2>
+  </div>
+
+  <div class="cert-linha">
+    <div class="cert-ano">2026</div>
+    <div class="cert-nome">Introdução à Cibersegurança</div>
+    <div class="cert-inst">Cisco Networking Academy / SENAC MS</div>
+  </div>
+  <div class="cert-linha">
+    <div class="cert-ano">2026</div>
+    <div class="cert-nome">PHP: evolua seu conhecimento e organize seu código</div>
+    <div class="cert-inst">Alura</div>
+  </div>
+  <div class="cert-linha">
+    <div class="cert-ano">2026</div>
+    <div class="cert-nome">PHP: criando sua aplicação</div>
+    <div class="cert-inst">Alura</div>
+  </div>
+  <div class="cert-linha">
+    <div class="cert-ano">2026</div>
+    <div class="cert-nome">C: avançando na linguagem</div>
+    <div class="cert-inst">Alura</div>
+  </div>
+  <div class="cert-linha">
+    <div class="cert-ano">2025</div>
+    <div class="cert-nome">Fundamentos do Python 1</div>
+    <div class="cert-inst">Cisco Networking Academy / SENAC MS</div>
+  </div>
+  <div class="cert-linha">
+    <div class="cert-ano">2025</div>
+    <div class="cert-nome">Python: crie a sua primeira aplicação</div>
+    <div class="cert-inst">Alura</div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="contato-grid">
+    <div>
+      <p class="frase-fechamento">Se seu time precisa de alguém que aprende rápido e entrega código de verdade, bora conversar.</p>
+      <ul class="lista-contato">
+        <li><a href="mailto:arthursousa.contatop@gmail.com" class="sweep">E-mail <span class="via">arthursousa.contatop@gmail.com</span></a></li>
+        <li><a href="https://www.linkedin.com/in/arthur-sousa-ads/" class="sweep">LinkedIn <span class="via">/in/arthur-sousa-ads</span></a></li>
+        <li><a href="https://github.com/arthursousa-dev" class="sweep">GitHub <span class="via">/arthursousa-dev</span></a></li>
+      </ul>
+    </div>
+    <div class="carimbo">DISPONÍVEL<br> PARA TRABALHAR</div>
+  </div>
+</section>
+
+<footer>
+  <span>Arthur Sousa da Costa — Campo Grande, MS</span>
+  <span>construído do Zero, sem template</span>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

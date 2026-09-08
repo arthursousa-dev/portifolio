@@ -1,3 +1,4 @@
+/* ===== tokens de design: cores, tipografia ===== */
 :root{
   --ink:#17140F;
   --paper:#EFEBE1;
@@ -12,6 +13,7 @@
   --mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
+/* reset básico */
 *{ margin:0; padding:0; box-sizing:border-box; }
 
 html{ scroll-behavior:smooth; }
@@ -33,12 +35,14 @@ body{
 
 @media (hover:none){ body{ cursor:auto; } }
 
+/* estilo de seleção de texto */
 ::selection{ background:var(--signal); color:var(--paper); }
 
 a{ color:inherit; }
 
 img, svg{ display:block; max-width:100%; }
 
+/* ===== cursor customizado (desktop) ===== */
 #cursor{
   position:fixed; top:0; left:0;
   width:14px; height:14px;
@@ -55,6 +59,7 @@ img, svg{ display:block; max-width:100%; }
 #cursor.grow{ width:46px; height:46px; background:var(--signal-soft); border:2px solid var(--signal); }
 @media (hover:none){ #cursor{ display:none; } }
 
+/* ===== barra de progresso de leitura ===== */
 #progresso{
   position:fixed; top:0; left:0; height:4px;
   background:var(--signal);
@@ -62,6 +67,7 @@ img, svg{ display:block; max-width:100%; }
   z-index:1000;
 }
 
+/* ===== efeito de sublinhado animado em links ===== */
 .sweep{
   position:relative;
   text-decoration:none;
@@ -79,6 +85,7 @@ img, svg{ display:block; max-width:100%; }
 .sweep:hover::after{ transform:scaleX(1); }
 
 /* nav */
+/* ===== cabeçalho fixo ===== */
 .topo{
   position:sticky; top:0;
   display:flex; justify-content:space-between; align-items:center;
@@ -102,6 +109,7 @@ img, svg{ display:block; max-width:100%; }
 }
 
 /* masthead */
+/* ===== hero / masthead ===== */
 .masthead{
   padding:64px 6% 40px;
   border-bottom:1px solid var(--rule);
@@ -167,6 +175,7 @@ h1.titulo{
 .snippet-box .cm{ color:#8a8577; }
 
 /* marquee */
+/* ===== marquee de tecnologias ===== */
 .faixa{
   border-bottom:1px solid var(--rule);
   background:var(--ink);
@@ -193,6 +202,7 @@ h1.titulo{
 section{ padding:90px 6%; border-bottom:1px solid var(--rule); }
 section:last-of-type{ border-bottom:none; }
 
+/* ===== cabeçalhos de seção reutilizáveis ===== */
 .cabecalho-editorial{
   display:flex; justify-content:space-between; align-items:flex-end;
   margin-bottom:52px; gap:20px; flex-wrap:wrap;
@@ -206,6 +216,7 @@ section:last-of-type{ border-bottom:none; }
 .cabecalho-editorial p{ max-width:32ch; color:#3a362c; font-size:15px; }
 
 /* projetos */
+/* ===== cards de projeto (lista alternada) ===== */
 .projeto{
   display:grid;
   grid-template-columns:0.9fr 1.4fr;
@@ -261,6 +272,7 @@ section:last-of-type{ border-bottom:none; }
 }
 
 /* skills */
+/* ===== seção "como eu trabalho" ===== */
 .skills-texto{
   font-family:var(--display);
   font-weight:500;
@@ -273,6 +285,7 @@ section:last-of-type{ border-bottom:none; }
   color:var(--signal);
 }
 
+/* contadores animados */
 .numeros{
   display:flex; gap:56px; margin-top:56px; flex-wrap:wrap;
 }
@@ -285,6 +298,7 @@ section:last-of-type{ border-bottom:none; }
 }
 
 /* certificações */
+/* ===== linhas da lista de certificações ===== */
 .cert-linha{
   display:grid;
   grid-template-columns:100px 1fr auto;
@@ -302,6 +316,7 @@ section:last-of-type{ border-bottom:none; }
 }
 
 /* contato */
+/* ===== seção de contato ===== */
 .contato-grid{
   display:grid; grid-template-columns:1.2fr 1fr; gap:60px; align-items:start;
 }
@@ -322,6 +337,7 @@ section:last-of-type{ border-bottom:none; }
 }
 .lista-contato a .via{ font-family:var(--mono); font-size:12px; color:#3a362c; font-weight:400; }
 
+/* selo "disponível para trabalhar" */
 .carimbo{
   justify-self:end;
   border:3px solid var(--stamp);

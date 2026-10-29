@@ -42,7 +42,7 @@
   }
 
   // duplica os itens para o loop contínuo do marquee
-  var itens = ['PHP','Python','MySQL','Git','SQL','POO','Segurança da Informação','JavaScript'];
+  var itens = ['PHP','Python','PostgreSQL','Git','SQL','POO','Segurança da Informação','JavaScript'];
   var track = document.getElementById('faixaTrack');
   var html = '';
   for (var v=0; v<2; v++){

@@ -57,10 +57,10 @@
         var r = bloco.getBoundingClientRect();
         var x = (e.clientX - r.left) / r.width - 0.5;
         var y = (e.clientY - r.top) / r.height - 0.5;
-        bloco.style.transform = 'rotateY('+(x*10)+'deg) rotateX('+(-y*10)+'deg)';
+        bloco.style.transform = 'perspective(800px) rotateY('+(x*10)+'deg) rotateX('+(-y*10)+'deg)';
       });
       bloco.addEventListener('mouseleave', function(){
-        bloco.style.transform = 'rotateY(0) rotateX(0)';
+        bloco.style.transform = '';
       });
     });
   }

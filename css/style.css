@@ -135,8 +135,9 @@ h1.titulo{
   display:block;
   overflow:hidden;
 }
-.titulo .linha span{
-  display:inline-block;
+.titulo .linha span{ display:inline-block; }
+/* só esconde para animar se o JS carregou: sem JS o título continua visível */
+.js .titulo .linha span{
   transform:translateY(110%);
   opacity:0;
 }

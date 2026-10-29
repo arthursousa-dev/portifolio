@@ -24,7 +24,7 @@
     var altura = document.documentElement.scrollHeight - window.innerHeight;
     var pct = altura > 0 ? (window.scrollY / altura) * 100 : 0;
     barra.style.width = pct + '%';
-  });
+  }, { passive:true });
 
   // ---- animação de entrada do título (linha por linha) ----
   if (!reduz) {
